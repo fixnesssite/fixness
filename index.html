@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixness – Real Fitness for Real Life</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Arial', sans-serif; background: #0a0a0a; color: #ffffff; }
+        
+        nav { background: #0a0a0a; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #222; position: sticky; top: 0; z-index: 100; }
+        .logo { font-size: 28px; font-weight: 900; color: #ff6b00; letter-spacing: 2px; }
+        .nav-links a { color: #fff; text-decoration: none; margin-left: 30px; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; }
+        .nav-links a:hover { color: #ff6b00; }
+
+        .hero { background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%); padding: 100px 40px; text-align: center; border-bottom: 2px solid #ff6b00; }
+        .hero h1 { font-size: 64px; font-weight: 900; line-height: 1.1; margin-bottom: 20px; }
+        .hero h1 span { color: #ff6b00; }
+        .hero p { font-size: 20px; color: #aaa; max-width: 600px; margin: 0 auto 40px; }
+        .cta-btn { background: #ff6b00; color: #fff; padding: 16px 40px; border: none; font-size: 18px; font-weight: 700; cursor: pointer; text-transform: uppercase; letter-spacing: 2px; text-decoration: none; display: inline-block; }
+        .cta-btn:hover { background: #e05a00; }
+
+        .section { padding: 80px 40px; max-width: 1100px; margin: 0 auto; }
+        .section h2 { font-size: 40px; font-weight: 900; margin-bottom: 40px; text-align: center; }
+        .section h2 span { color: #ff6b00; }
+
+        .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .card { background: #1a1a1a; padding: 40px 30px; border-top: 3px solid #ff6b00; }
+        .card h3 { font-size: 22px; margin-bottom: 15px; color: #ff6b00; }
+        .card p { color: #aaa; line-height: 1.7; }
+
+        .affiliate-section { background: #111; padding: 80px 40px; }
+        .affiliate-section h2 { font-size: 40px; font-weight: 900; margin-bottom: 10px; text-align: center; }
+        .affiliate-section h2 span { color: #ff6b00; }
+        .affiliate-section .subtitle { text-align: center; color: #aaa; margin-bottom: 50px; font-size: 16px; }
+        .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; max-width: 1100px; margin: 0 auto; }
+        .product-card { background: #1a1a1a; padding: 30px; text-align: center; border: 1px solid #222; }
+        .product-card h3 { margin-bottom: 10px; font-size: 18px; }
+        .product-card p { color: #aaa; font-size: 14px; margin-bottom: 20px; }
+        .product-btn { background: #ff6b00; color: #fff; padding: 10px 25px; text-decoration: none; font-weight: 700; font-size: 14px; text-transform: uppercase; display: inline-block; }
+        .product-btn:hover { background: #e05a00; }
+
+        footer { background: #0a0a0a; border-top: 1px solid #222; padding: 40px; text-align: center; color: #555; font-size: 14px; }
+        footer span { color: #ff6b00; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">FIXNESS</div>
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#gear">Gear</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <h1>Real Fitness.<br><span>Real Results.</span></h1>
+    <p>No fluff. No nonsense. Just the training, gear, and mindset you need to get it done.</p>
+    <a href="#gear" class="cta-btn">Shop Recommended Gear</a>
+</section>
+
+<section class="section" id="about">
+    <h2>Why <span>Fixness?</span></h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Built for Real People</h3>
+            <p>No Instagram perfection here. Fixness is for people with jobs, families, and busy lives who still want to show up and get results.</p>
+        </div>
+        <div class="card">
+            <h3>Honest Recommendations</h3>
+            <p>Every product we recommend is chosen because it actually works — not because of a big brand deal. Real reviews, real results.</p>
+        </div>
+        <div class="card">
+            <h3>Train Smart</h3>
+            <p>Whether you're lifting, running, or just getting off the sofa for the first time — we've got the tools and advice to keep you moving.</p>
+        </div>
+    </div>
+</section>
+
+<section class="affiliate-section" id="gear">
+    <h2>Recommended <span>Gear</span></h2>
+    <p class="subtitle">Hand-picked equipment and supplements to fuel your training</p>
+    <div class="products">
+        <div class="product-card">
+            <h3>Protein Supplements</h3>
+            <p>Quality protein to support muscle growth and recovery after every session.</p>
+            <a href="#" class="product-btn">Shop Now</a>
+        </div>
+        <div class="product-card">
+            <h3>Home Gym Equipment</h3>
+            <p>Build your home setup without breaking the bank. Our top picks for every budget.</p>
+            <a href="#" class="product-btn">Shop Now</a>
+        </div>
+        <div class="product-card">
+            <h3>Training Accessories</h3>
+            <p>Resistance bands, lifting belts, grips and more — the small kit that makes a big difference.</p>
+            <a href="#" class="product-btn">Shop Now</a>
+        </div>
+    </div>
+</section>
+
+<footer id="contact">
+    <p>© 2026 <span>FIXNESS</span> — Real Fitness for Real Life</p>
+    <p style="margin-top:10px;">Contact: hello@fixness.com</p>
+</footer>
+
+</body>
+</html>
